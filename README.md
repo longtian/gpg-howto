@@ -4,13 +4,14 @@
 
 > 开源赋予了每个人贡献代码的权利，要提高开源软件整体的安全性需要从一个个提交开始。
 > 为 Commit 带上 GPG 的签名就是一个很好的开始，它能够在一定程度上保证安全性。
-> 本文以 Ubuntu 为例。
+> GPG 是一个非常出色的加密软件。当年斯诺登就是用 GPG 把大量的绝密文件发送给了记者。
+> 本文以 Ubuntu 为例，介绍怎样为你的 Commit 加上 GPG 的签名。
 
 ## 环境配置
 
 注意只有 `git` 2.0 及以后的版本才支持 `GPG` 签名。
 
-**查看 git 版本**
+**查看 git 版本：**
 
 ```sh
 ~$ git --version
@@ -28,7 +29,12 @@ sudo apt-get install git
 **查看 GPG 是否安装**
 
 ```sh
-gpg --version
+~$ gpg --version
+gpg (GnuPG) 1.4.16
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
 ```
 
 系统里一般都已经装上了 `GPG`，如果没有可以 **手动安装 GnuPG**
@@ -135,6 +141,8 @@ git config --global commit.gpgsign true
 
 ## 参考文章
 
+- http://www.ruanyifeng.com/blog/2013/07/gpg.html
+- https://www.gnupg.org/howtos/zh/index.html
 - http://www.linuxidc.com/Linux/2014-11/109972.htm
 - https://help.github.com/articles/generating-a-new-gpg-key/
 - https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/
