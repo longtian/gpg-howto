@@ -139,6 +139,10 @@ git config --global commit.gpgsign true
 
 ![提交历史](./history.png)
 
+## 后话
+
+如果在 Github 上把 `GPG Public Key` 移除, 那么之前的 `Verified` 提交会变成 `Unverified`。
+
 ## 参考文章
 
 - http://www.ruanyifeng.com/blog/2013/07/gpg.html
